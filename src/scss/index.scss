@@ -1,0 +1,134 @@
+//* Стили не разбивал на отдельные файлы, а стоило бы
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-weight: 400;
+  color: "#000";
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.posts-contain {
+  height: 500px;
+  margin-top: 20px;
+  text-align: center;
+  overflow: hidden;
+  overflow-y: auto;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 12px;
+
+    a {
+      margin-left: 10px;
+      color: #000;
+      text-decoration: none;
+
+      &:hover {
+        color: blue;
+      }
+    }
+  }
+}
+
+.button-contain {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  &__item {
+    margin: 10px 0;
+    padding: 12px 14px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    
+    &:hover {
+      animation-play-state: paused; 
+      opacity: .7;
+    }
+    
+    &_1 {
+      animation: bounce-1;
+      animation-iteration-count: infinite;
+      animation-duration: 2s;
+    }
+
+    &_2 {
+      animation: bounce-2;
+      animation-iteration-count: infinite;
+      animation-duration: 2s;
+    }
+
+    &_3 {
+      animation: bounce-3;
+      animation-iteration-count: infinite;
+      animation-duration: 2s;
+    }
+
+    &_4 {
+      animation: bounce-4;
+      animation-iteration-count: infinite;
+      animation-duration: 2s;
+    }
+  }
+}
+
+.bounce-1 {
+  animation-name: bounce-1;
+  animation-timing-function: linear;
+}
+
+.bounce-2 {
+  animation-name: bounce-2;
+  animation-timing-function: linear;
+}
+
+.bounce-3 {
+  animation-name: bounce-3;
+  animation-timing-function: linear;
+}
+
+.bounce-4 {
+  animation-name: bounce-4;
+  animation-timing-function: linear;
+}
+
+@keyframes bounce-1 {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-100px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes bounce-2 {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-80px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes bounce-3 {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-120px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes bounce-4 {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-140px); }
+  100% { transform: translateX(0); }
+}
