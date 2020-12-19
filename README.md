@@ -1,1 +1,7 @@
-# redux-saga-reddit-posts
+#Всем привет, это тестовое задание специально для вас, так сказать
+
+Если вдруг, вам понадобиться протестировать его на своей локальной машине, то:
+
+1. git clone https://github.com/1mm0rt4l1t9/redux-saga-reddit-posts.git
+2. npm install / yarn add
+3. npm run start (Вне зависимости от вашей операционной системы)
